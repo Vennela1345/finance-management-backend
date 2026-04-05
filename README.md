@@ -1,5 +1,6 @@
-# finance-management-backend
+# Finance-Management-Backend
 A Django REST Framework-based backend system for managing finance records, user authentication, and transaction tracking. The project provides APIs for handling finance data efficiently with proper modular architecture. 
+
 # 🚀 Django Backend API Project
 
 ## 📌 Overview
@@ -26,7 +27,7 @@ This is a Django REST API project with:
 
 ### 1. Clone Repository
 
-git clone https://github.com/your-username/backend-project.git
+git clone https://github.com/Vennela1345/finance-management-backend.git
 cd backend-project
 
 ### 2. Install Dependencies
@@ -100,6 +101,7 @@ postman_collection.json
 ---
 
 ## 👨‍💻 Author
+Vennela Gumma
 
 Vennela Gumma
 
