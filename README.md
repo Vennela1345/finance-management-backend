@@ -1,25 +1,40 @@
-# Finance-Management-Backend
-A Django REST Framework-based backend system for managing finance records, user authentication, and transaction tracking. The project provides APIs for handling finance data efficiently with proper modular architecture. 
+# 💰 Finance Management Backend
 
-# 🚀 Django Backend API Project
-
-## 📌 Overview
-
-This is a Django REST API project with:
-
-* User Management
-* Records Management
-* Finance Module
-* JWT Authentication
+A Django REST Framework-based backend system for managing financial records, user authentication, and transaction tracking.
 
 ---
 
-## 🛠 Tech Stack
+## 📌 Overview
+
+This project provides REST APIs for:
+
+* User Management
+* Financial Records Management
+* Transaction Tracking
+* Secure Authentication using JWT
+
+The system follows a modular and scalable architecture.
+
+---
+
+## 🚀 Features
+
+* 🔐 JWT Authentication (Login & Token System)
+* 👤 User Management APIs
+* 💰 Financial Records CRUD Operations
+* 📊 Finance Data Handling
+* ✅ Input Validation & Error Handling
+* 🗄️ Database Integration
+
+---
+
+## 🛠️ Tech Stack
 
 * Python
 * Django
 * Django REST Framework
-* JWT Authentication
+* Simple JWT
+* SQLite (default database)
 
 ---
 
@@ -28,41 +43,54 @@ This is a Django REST API project with:
 ### 1. Clone Repository
 
 git clone https://github.com/Vennela1345/finance-management-backend.git
-cd backend-project
+
+cd finance-management-backend
+
+---
 
 ### 2. Install Dependencies
 
 pip install -r requirements.txt
 
-### 3. Run Migrations
+---
+
+### 3. Apply Migrations
 
 python manage.py makemigrations
 python manage.py migrate
+
+---
 
 ### 4. Create Superuser
 
 python manage.py createsuperuser
 
+---
+
 ### 5. Run Server
 
 python manage.py runserver
+
+Server will start at:
+http://127.0.0.1:8000/
 
 ---
 
 ## 🔐 Authentication (JWT)
 
-### Get Token
+### Get Access Token
 
-POST /api/token/
+**POST** `/api/token/`
 
-Request:
+#### Request:
+
 {
-"username": "vennela",
-"email": "gummavennela@gmail.com"
-"password": "venni"
+"username": "your_username",
+"password": "your_password"
 }
 
-Response:
+#### Response:
+
 {
 "access": "your_access_token",
 "refresh": "your_refresh_token"
@@ -72,36 +100,59 @@ Response:
 
 ## 📡 API Endpoints
 
-### Users
+### 👤 Users
 
-GET /api/users/
+* GET `/api/users/` → Get all users
 
-### Records
+---
 
-GET /api/records/
-POST /api/records/
+### 💰 Records
 
-Example POST:
+* GET `/api/records/` → Fetch all records
+* POST `/api/records/` → Create new record
+
+#### Example Request:
+
 {
 "title": "Test Record",
 "amount": 100
 }
 
-### Finance
+---
 
-GET /api/finance/
+### 📊 Finance
+
+* GET `/api/finance/` → Finance summary
 
 ---
 
 ## 🧪 API Testing
 
-Use Postman collection included:
-postman_collection.json
+You can test APIs using:
+
+* Postman (collection included in project)
+* Swagger UI (if enabled)
 
 ---
 
-## 👨‍💻 Author
+## ⚠️ Limitations
+
+* Not deployed to cloud
+* Basic UI (backend only)
+* Limited validation rules
+
+---
+
+## 🔮 Future Improvements
+
+* Deploy to cloud (AWS / Render)
+* Add frontend dashboard
+* Role-based access control
+* Advanced analytics & reports
+
+---
+
+## 👩‍💻 Author
 Vennela Gumma
 
-Vennela Gumma
 
